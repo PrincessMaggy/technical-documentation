@@ -1,0 +1,226 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+   
+<link rel="stylesheet" href="style.css"/>
+  <title>Technical Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">     </script>
+</head>
+
+
+
+<body>
+  <div class="container">
+  <nav id="navbar"> 
+    <header>front end web dev. </header>
+    <ul>
+      <li> <a href="#Introduction" class="nav-link">Introduction</a> </li>
+    
+      <li>  <a href="#Prerequisites" class="nav-link">Prerequisites</a></li>
+    
+      <li> <a href="#Modules" class="nav-link">Modules</a> </li>
+    
+    
+      <li>  <a href="#HTML" class="nav-link">HTML</a> </li>
+      
+      
+      <li>  <a href="#Attributes" class="nav-link">Attributes</a> </li>
+    
+    
+    <li> <a href="#Nesting_Elements" class="nav-link">Nesting Elements</a> </li>
+      
+    <li> <a href="#Anatomy" class="nav-link">Anatomy</a> </li>
+      
+        <li> <a href="#Reference" class="nav-link">Reference</a></li>
+         
+      
+    
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header> Introduction</header>
+      <p> To build websites, you should know about HTML — the fundamental technology used to define the structure of a webpage.</p>
+      <p> HTML is used to specify whether your web content should be recognized as any of the following: 
+      <ul>
+        <li> Paragraph</li>
+        <li>List</li>
+        <li>Heading </li>
+        <li>Link </li>
+        <li>Image</li>
+        <li>Multimedia player</li>
+        <li>Form, etc.</li>
+      </ul>
+        
+      </p>
+    </section>
+    
+    
+    
+    
+    <section class="main-section" id="Prerequisites">
+      <header>Prerequisites </header>
+      <p>Before starting this topic, you should have at least basic familiarity with using computers and using the web passively (i.e. just looking at it, consuming the content). You should have a basic work environment set up as detailed in Installing basic software, and understand how to create and manage files, as detailed in Dealing with files — both are parts of our Getting started with the web complete beginner's module.</p>
+
+<p>It is recommended that you work through Getting started with the web before attempting this topic. However, this isn't absolutely necessary; much of what is covered in the HTML basics article is also covered in our Introduction to HTML module, albeit in a lot more detail.</p>
+      <p>After learning HTML, you can then move on to learning about more advanced topics such as:</p>
+      <ul>
+        <li> CSS</li>
+        <li> Javascript</li>
+      </ul>
+    </section>
+    
+    
+    
+    
+    <section class="main-section" id="Modules">
+      
+      <header>Modules </header>
+      <p>This topic contains the following modules, in a suggested order for working through them: </p>
+<ul>
+  <li> Introduction to HTML:
+This module sets the stage, getting you used to important concepts and syntax, looking at applying HTML to text, how to create hyperlinks, and how to use HTML to structure a webpage.</li>
+  <li> Multimedia and embedding:
+This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire other webpages.</li>
+<li> HTML tables:
+Representing tabular data on a webpage in an understandable, accessible way can be a challenge. This module covers basic table markup, along with more complex features such as implementing captions and summaries.</li>
+      </ul>
+    </section>
+    
+    
+    
+    
+    <section class="main-section" id="HTML">
+      <header> HTML</header>
+      <p> HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way.</p>
+      <p>The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.  </p>
+      <p>For example, consider the following line of text:</p>
+      <pre> My cat is very grumpy.</pre>
+    <p>  If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph.
+      <pre> <code> &lt;p&gt;element:&lt;/p&gt;</code> 
+      
+      <code> 
+      &lt;p&gt;My cat is very grumpy:&lt;/p&gt;
+      </code> </pre>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section class="main-section" id="Attributes">
+      
+      <header>Attributes </header>
+      <p>Elements can also have attributes. Attributes contain extra information about the element that won't appear in the content. </p>
+
+      <p>An attribute should have:</p>
+      <ul>
+        <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+    <li>      The attribute name, followed by an equal sign.</li>
+   <li>An attribute value, wrapped with opening and closing quote marks.</li>
+      </ul>
+   
+      
+    <p>  Sometimes you will see attributes written without values. This is entirely acceptable. These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name.
+    </section>
+      
+    
+    
+    
+    
+    
+    <section class="main-section" id="Nesting_Elements">
+      
+      <header>Nesting Elements </header>
+      <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:
+      </p>
+ <pre> <code> 
+&lt;p&gt;My cat is &lt;strong&gt;very &lt;/strong&gt; grumpy.</code> </pre>
+
+    </section>
+    
+    
+   
+    
+     <section class="main-section" id="Anatomy">
+      
+      <header>Anatomy </header>
+      <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+       
+       
+       <pre><code>
+         <textarea style="  height:15em;"> <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+  </body>
+           </html></textarea> </code></pre>
+       
+       
+       
+       <p>Here we have:</p>
+       <code>&lt;!DOCTYPE html&gt;</code>
+       <p>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look something like this:</p>
+      
+       
+      <pre> <code><textarea style="height:9em;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></textarea></code></pre>
+       
+       
+       <p>More recently, the doctype is a historical artifact that needs to be included for everything else to work right.
+         <code>&lt;!DOCTYPE html&gt;</code> is the shortest string of characters that counts as a valid doctype. That is all you need to know!</p>
+       
+       
+     <code>
+        &lt;html&gt; &lt;/html&gt;</code><p>: The <code> &lt;html&gt;</code> element. This element wraps all the content on the page. It is sometimes known as the root element.</p>
+       
+       
+       <code>&lt;head&gt; &lt;/head&gt;</code><p>: The <code>&lt;head&gt;</code> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You'll learn more about this in the next article of the series.</p>
+         
+         
+         
+    <p><code> &lt;meta charset="utf-8"&gt; </code>: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</p>
+       
+       
+       
+       <code>&lt;title&gt; &lt;/title&gt;</code><p>: The <code>&lt;title&gt;</code> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.
+         
+         
+         
+     <code>&lt;body&gt; &lt;/body&gt; </code>    <p>: The <code>&lt;body&gt;</code> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+           </p> 
+       
+    </section>
+    
+    
+    
+     <section class="main-section" id="Reference">
+      
+      <header> Reference</header>
+       <p> All the documentation in this page is taken from<b> MDN. </b></p>
+
+    </section>
+    
+    
+    </main>
+  
+  
+  </div>
+  
+    <footer>Copyright (c) 2021|PrincessMaggy|Terms and Conditions|Privacy Policy|Sitemap
+  </footer>
+  
+  
+  
+  </body>
+</html>
